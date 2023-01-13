@@ -24,23 +24,17 @@ export class News extends Component {
     };
   }
 
-   update=async()=>{
-    let url = `https://newsapi.org/v2/top-headlines?country=${
-        this.props.country
-      }&category=${
-        this.props.category
-      }&apiKey=617e04b0ea3242e4bdcb9cdc653a1953&page=${
-        this.state.page
-      }&pageSize=${this.props.pageSize}`;
-      this.setState({ loading: true });
-      let data = await fetch(url);
-      let parsedData = await data.json();
-      this.setState({
-        articles: parsedData.articles,
-        totalArticles: parsedData.totalResults,
-        loading: false,
-      });
-  }
+  update = async () => {
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=617e04b0ea3242e4bdcb9cdc653a1953&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+    this.setState({ loading: true });
+    let data = await fetch(url);
+    let parsedData = await data.json();
+    this.setState({
+      articles: parsedData.articles,
+      totalArticles: parsedData.totalResults,
+      loading: false,
+    });
+  };
 
   async componentDidMount() {
     // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=617e04b0ea3242e4bdcb9cdc653a1953&page=1&pageSize=${this.props.pageSize}`;
@@ -52,8 +46,8 @@ export class News extends Component {
     //   totalArticles: parsedData.totalResults,
     //   loading: false,
     // });
-    this.update()
-  };
+    this.update();
+  }
 
   handlePreviClick = async () => {
     //     let url = `https://newsapi.org/v2/top-headlines?country=${
@@ -71,8 +65,8 @@ export class News extends Component {
     //       page: this.state.page - 1,
     //       loading: false,
     //     });
-    this.setState({page: this.state.page - 1});
-    this.update()
+    this.setState({ page: this.state.page - 1 });
+    this.update();
   };
 
   handleNextClick = async () => {
@@ -94,13 +88,13 @@ export class News extends Component {
     //     loading: false,
     //   });
     // }
-    this.setState({page: this.state.page + 1});
-    this.update()
+    this.setState({ page: this.state.page + 1 });
+    this.update();
   };
 
   capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
-  };
+  }
 
   render() {
     return (
@@ -110,7 +104,7 @@ export class News extends Component {
             Newz - {this.capitalizeFirstLetter(this.props.category)} Top
             Headlines
           </h1>
-          {this.state.loading && <LoadingGif/>}
+          {this.state.loading && <LoadingGif />}
           <div className="row my-3">
             {!this.state.loading &&
               this.state.articles.map((elem) => {
