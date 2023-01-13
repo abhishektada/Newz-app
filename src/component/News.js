@@ -15,13 +15,14 @@ export class News extends Component {
     category: PropTypes.string,
   };
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       articles: [],
       loading: false,
       page: 1,
     };
+    document.title = `${this.capitalizeFirstLetter(this.props.category)} - Newz`
   }
 
   update = async () => {
@@ -37,72 +38,29 @@ export class News extends Component {
   };
 
   async componentDidMount() {
-    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=617e04b0ea3242e4bdcb9cdc653a1953&page=1&pageSize=${this.props.pageSize}`;
-    // this.setState({ loading: true });
-    // let data = await fetch(url);
-    // let parsedData = await data.json();
-    // this.setState({
-    //   articles: parsedData.articles,
-    //   totalArticles: parsedData.totalResults,
-    //   loading: false,
-    // });
     this.update();
-  }
+  };
 
   handlePreviClick = async () => {
-    //     let url = `https://newsapi.org/v2/top-headlines?country=${
-    //       this.props.country
-    //     }&category=${
-    //       this.props.category
-    //     }&apiKey=617e04b0ea3242e4bdcb9cdc653a1953&page=${
-    //       this.state.page - 1
-    //     }&pageSize=${this.props.pageSize}`;
-    //     this.setState({ loading: true });
-    //     let data = await fetch(url);
-    //     let parsedData = await data.json();
-    //     this.setState({
-    //       articles: parsedData.articles,
-    //       page: this.state.page - 1,
-    //       loading: false,
-    //     });
     this.setState({ page: this.state.page - 1 });
     this.update();
   };
 
   handleNextClick = async () => {
-    // if (!(this.state.page + 1 >Math.ceil(this.state.totalArticles / this.props.pages)))
-    // {
-    //   let url = `https://newsapi.org/v2/top-headlines?country=${
-    //     this.props.country
-    //   }&category=${
-    //     this.props.category
-    //   }&apiKey=617e04b0ea3242e4bdcb9cdc653a1953&page=${
-    //     this.state.page + 1
-    //   }&pageSize=${this.props.pageSize}`;
-    //   this.setState({ loading: true });
-    //   let data = await fetch(url);
-    //   let parsedData = await data.json();
-    //   this.setState({
-    //     articles: parsedData.articles,
-    //     page: this.state.page + 1,
-    //     loading: false,
-    //   });
-    // }
     this.setState({ page: this.state.page + 1 });
     this.update();
   };
 
   capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
-  }
+  };
 
   render() {
     return (
       <div>
         <div className="container my-3">
           <h1 className="text-center">
-            Newz - {this.capitalizeFirstLetter(this.props.category)} Top
-            Headlines
+            Newz - Top {this.capitalizeFirstLetter(this.props.category)} Headlines
           </h1>
           {this.state.loading && <LoadingGif />}
           <div className="row my-3">
