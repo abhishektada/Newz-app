@@ -1,0 +1,58 @@
+{
+  "status": "ok",
+  "totalResults": 4,
+  "articles": [
+    {
+      "source": {
+        "id": "al-jazeera-english",
+        "name": "Al Jazeera English"
+      },
+      "author": "Al Jazeera",
+      "title": "Australia cancels Afghanistan cricket series over curbs on women",
+      "description": "Australia pulls out of upcoming one-day series in the UAE citing Taliban’s moves to further restrict women’s rights.",
+      "url": "http://www.aljazeera.com/news/2023/1/12/australia-cancels-afghanistan-cricket-series-over-curbs-on-women",
+      "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2023/01/2023-01-08T071504Z_1024029263_UP1EJ180K521T_RTRMADP_3_CRICKET-TEST-AUS-ZAF.jpg?resize=1920%2C1440",
+      "publishedAt": "2023-01-12T07:57:24Z",
+      "content": "Australias mens team has withdrawn from their One-Day International (ODI) series against Afghanistan in March following further restrictions on womens and girls rights imposed by the Taliban, Cricket… [+2451 chars]"
+    },
+    {
+      "source": {
+        "id": "talksport",
+        "name": "TalkSport"
+      },
+      "author": "By talkSPORT",
+      "title": "talkSPORT lands exclusive three year Cricket New Zealand rights package with England Test series live in...",
+      "description": "",
+      "url": "https://talksport.com/sport/cricket/1300491/talksport-live-commentary-cricket-new-zealand-rights-england-test-series/",
+      "urlToImage": "https://talksport.com/wp-content/uploads/sites/5/2023/01/GettyImages-1448469917-1.jpg?strip=all&quality=100&w=1920&h=1080&crop=1",
+      "publishedAt": "2023-01-12T07:30:00Z",
+      "content": "talkSPORT has today announced it has landed the exclusive broadcasting rights for England’s next three cricket tours of New Zealand. \r\nThe tour dates include a two Test series with England on the 16t… [+2192 chars]"
+    },
+    {
+      "source": {
+        "id": "espn-cric-info",
+        "name": "ESPN Cric Info"
+      },
+      "author": null,
+      "title": "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
+      "description": "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
+      "url": "http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket",
+      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg",
+      "publishedAt": "2020-04-27T11:41:47Z",
+      "content": "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]"
+    },
+    {
+      "source": {
+        "id": "espn-cric-info",
+        "name": "ESPN Cric Info"
+      },
+      "author": null,
+      "title": "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
+      "description": "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
+      "url": "http://www.espncricinfo.com/story/_/id/28970907/learned-watching-1992-world-cup-final-full-again",
+      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg",
+      "publishedAt": "2020-03-30T15:26:05Z",
+      "content": "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]"
+    }
+  ]
+}
