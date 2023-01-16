@@ -13,18 +13,10 @@ export class NewsItem extends Component {
           >
             {source}
           </span>
-          <img src={imageUrl} className="card-img-top" alt="..." />
+          <img src={imageUrl} className="card-img-top" alt="News Images" />
           <div className="card-body">
-            <h5 className="card-title">
-              {/* {title.length >= 40 ? title.slice(0, 200) + "..." : title} */}
-              {title}
-            </h5>
-            <p className="card-text">
-              {/* {description.length > 80
-                ? description.slice(0, 80) + "..."
-                : description} */}
-              {description}
-            </p>
+            <h5 className="card-title">{title}</h5>
+            <p className="card-text">{description}</p>
             <p className="card-text">
               <small className="text-muted">
                 By {author} on {time}
